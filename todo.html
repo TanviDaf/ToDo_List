@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="sty.css">
+	<script src="ad.js"></script>
+	<title>To-Do List</title>
+</head>
+
+<body>
+	<div class="title">
+        <span><img src="flower1.jpg" height="50"></span>
+		<strong>ToDo List</strong>
+        <span><img src="flower2.jpg" height="50"></span>
+	</div>
+	<div class="container">
+		<h2>Add Items</h2>
+		</label>
+		<form id="addForm">
+			<div class="row">
+				<div class="ip">
+					<input type="text" onkeyup="toggleButton(this, 'submit')"
+						class="form-control" id="item">
+				</div>
+				<div class="add">
+				<input type="submit" class="btn"
+						id="submit" value="ADD">
+				</div>
+			</div>
+		</form>
+		<h3>Tasks</h3>
+			<h4 class="tasklist" id="items"></h4>	
+	</div>
+</body>
+</html>
